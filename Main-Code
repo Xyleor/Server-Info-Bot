@@ -1,0 +1,32 @@
+import discord
+client.run(Bot Token)
+
+client = discord.Client()
+
+@client.event
+async def on_ready():
+  print('Logged in as {0.user}'.format(client))
+
+
+@client.event
+async def on_message(message):
+  if message.content.startswith('!hello'):
+   await message.channel.send ('Hey!')
+
+
+@client.event
+async def on_message(message):
+  if message.content.startswith('!invite')
+   await message.channel.send ('Server Invite Link')
+
+
+@client.event
+async def on_message(message):
+  if message.content.startswith('!about')
+  await message.channel.send ('About your server')
+
+
+@client.event
+async def on_message(message):
+  if message.content.startswith('!owner')
+  await message.channel.send ('Server Owner')
